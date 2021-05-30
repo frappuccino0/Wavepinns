@@ -22,5 +22,11 @@ pip install pyDOE
 以及画图需要的texlive环境
 
 ## WavePINNs工作流程
-首先介绍各个文件夹的用途：
-*  ``
+首先介绍各个文件的用途：
+*  `generate_data`用于使用SEISMIC_CMPL生成有限差分数据，并用matlab整理数据格式
+*  `models`存放训练好的神经网络
+*  `Pinns_class.py`构建解决波动方程约束的神经网络
+
+我们需要按照顺序执行以下脚本来训练网络：
+1. `Train`训练一个神经网络
+2. `Wavepinns.ipynb`调用训练好的神经网络画图
