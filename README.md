@@ -23,7 +23,7 @@ pip install pyDOE
 
 ## WavePINNs工作流程
 首先介绍各个文件的用途：
-*  `generate_data`用于使用SEISMIC_CMPL生成有限差分数据，并用matlab整理数据格式
+*  `generate_data`用于使用SEISMIC_CMPL生成有限差分数据，并用matlab整理数据格式;
 *  `models`存放训练好的神经网络
 *  `Pinns_class.py`构建解决波动方程约束的神经网络
 
